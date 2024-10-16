@@ -1,5 +1,7 @@
+## Architecture
+<img src="./assets/architecture.png" alt="architecture" >
 Todos:
-- [ ] Plan the architecture(client - server)
+- [x] Plan the architecture(client - server)
 - [ ] Implement a network communication(gRPC)
 - [ ] Core operations
    - [ ] File system operations(read, write, delete)

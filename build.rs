@@ -1,3 +1,3 @@
 fn main() {
-    tonic_build::compile_protos("proto/dfs.proto").unwrap();
+    tonic_build::compile_protos("./src/proto/dfs.proto").unwrap();
 }

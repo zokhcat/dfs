@@ -1,0 +1,49 @@
+syntax = "proto3";
+
+package dfs;
+
+service MetadataService {
+    rpc CreateFile(CreateFileRequest) returns (CreateFileResponse);
+    rpc ReadFile(ReadFileRequest) returns (ReadFileResponse);
+    rpc UpdateFile(UpdateFileRequest) returns (UpdateFileResponse);
+    rpc DeleteFile(DeleteFileRequest) returns (DeleteFileResponse);
+}
+
+message CreateFileRequest {
+    string filename = 1;
+    bytes data = 2;
+}
+
+message CreateFileResponse {
+    bool success = 1;
+    string message = 2;
+}
+
+message ReadFileRequest {
+    string filename = 1;
+}
+
+message ReadFileResponse {
+    bool success = 1;
+    bytes data = 2;
+    string message = 3;
+}
+
+message UpdateFileRequest {
+    string filename = 1;
+    bytes data = 2;
+}
+
+message UpdateFileResponse {
+    bool success = 1;
+    string message = 2;
+}
+
+message DeleteFileRequest {
+    string filename = 1;
+}
+
+message DeleteFileResponse {
+    bool success = 1;
+    string message = 2;
+}

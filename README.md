@@ -2,7 +2,7 @@
 <img src="./assets/architecture.png" alt="architecture" >
 Todos:
 - [x] Plan the architecture(client - server)
-- [ ] Implement a network communication(gRPC)
+- [x] Implement a network communication(gRPC)
 - [ ] Core operations
    - [ ] File system operations(read, write, delete)
    - [ ] Metadata management
